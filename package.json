@@ -1,0 +1,73 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^10.0.0",
+    "@react-native-community/masked-view": "0.1.6",
+    "@react-navigation/bottom-tabs": "^5.2.6",
+    "@react-navigation/native": "^5.1.5",
+    "@react-navigation/stack": "^5.2.10",
+    "@react-navigation/web": "~1.0.0-alpha.9",
+    "expo": "^37.0.6",
+    "expo-asset": "~8.1.4",
+    "expo-constants": "~9.0.0",
+    "expo-font": "~8.1.0",
+    "expo-localization": "~8.1.0",
+    "expo-updates": "~0.1.1",
+    "expo-web-browser": "~8.1.0",
+    "i18n-js": "^3.5.1",
+    "outstated": "^3.0.1",
+    "prop-types": "^15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.0.tar.gz",
+    "react-native-animated-spinkit": "^1.4.1",
+    "react-native-dropdownalert": "^4.2.1",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-iphone-x-helper": "^1.2.1",
+    "react-native-safe-area-context": "0.7.3",
+    "react-native-screens": "~2.2.0",
+    "react-native-web": "^0.11.7",
+    "react-native-swiper": "^1.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-preset-expo": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-universe": "^3.0.0",
+    "husky": "^4.2.3",
+    "jest-expo": "^37.0.0",
+    "lint-staged": "^10.1.2",
+    "prettier": "^2.0.4",
+    "react-native-dotenv": "^0.2.0",
+    "typescript": "^3.8.3"
+  },
+  "eslintConfig": {
+    "extends": "universe/native"
+  },
+  "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
